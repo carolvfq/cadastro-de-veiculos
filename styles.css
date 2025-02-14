@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(160, 159, 159);
+    background-color: rgb(198, 236, 210);
 }
 
 p, label {
@@ -24,22 +24,30 @@ textarea{
     padding: 15px;
     
 }
+.box-input{
+    margin-bottom: 40px;
+}
+.form-head{
+    border-bottom: 1px solid #DFDFDF;
+    height: 45px;
+}
 
 .form-body{
     padding: 30px;
+    padding-left: 100px;
 }
 
 .div-titulo{
     
-    height: 120px;
-    background-color: rgb(189, 239, 189);
+    height: 150px;
+    background-color: rgb(68, 147, 68);
     padding: 30px;
 }
 
 
 .div-titulo h3{
-    text-align: center;
-    color: rgb(52, 69, 52);
+   
+    color: rgb(246, 247, 246);
     margin-top: 0;
 }
 
@@ -50,7 +58,30 @@ textarea{
     position: relative;
     top: -62px;
     width: 50%; 
-    padding-left: 100px;
     
 }
 
+.required-field{
+    color: red;
+}
+
+.option-box{
+     margin-right: 30px;
+     display: inline-block;
+     margin-right: 30px;
+}
+
+.option-list{
+    padding-left: 0;
+
+}
+
+.option-list li {
+    list-style: none ;
+}
+
+.block{
+    display: block;
+}
+
+.
