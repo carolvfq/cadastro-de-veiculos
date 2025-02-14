@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro de veículo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"
+
+</head>
+<body>
+    <div class="container">
+        <div class="div-titulo">  
+            <h3 class="titulo-principal"> Cadastre seu veículo para vender muito mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-head">
+                <p> cadastro</p>
+            </div>
+            <div class="form-body">
+                <h1 class="titulo-principal"> Venda fácil o seu veículo!</h1>
+                <p>Descreva o seu veículo e selecione todas as opcionais e características que ele possui</p>
+                <form action="text" method="post">
+                  <div class="box-input">
+                    <label for="anuncio">Título do anúncio: <span class="required-field">*</span></label>
+                    <input type="text" name="anuncio" placeholder="Defina um título para seu veículo" id="anuncio" class="block" required> 
+                  </div>
+                    
+                  <div class="box-input">
+                    <label for="preco"> Valor:<span class="required-field">*</span></label>
+                    <input type="number" name="preco" placeholder="Ex:50.000" id="preco" minlength="1" maxlength="30" class="block" required> 
+
+                  </div>
+                   
+                  <div class="box-input">
+                   <label for="descricao">Descrição:<span class="required-field">*</span></label>
+                  <textarea name="descricao" id="descricao" rows="10" cols="50" placeholder="Descreva o seu veículo" minlength="1" class="block" required>
+                  
+
+                  </textarea>
+
+                  <div class="box-input">
+
+                  </div>
+                  <label for="unico-dono">Único dono?<span class="required-field">*</span></label>
+                  <select name="unico-dono" id="unico-dono">
+                    <option value="">Selecione...</option>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                  </select>
+                  </div>
+                  
+                  <div class="box-input">
+                  <label for="marca">Marca:<span class="required-field">*</span></label>
+                  <input type="text" name="marca" placeholder="Ex:Toyota" id="marca" minlength="1" maxlength="30" class="block" required> 
+                  </div>
+                   
+                  <div class="box-input">
+                  <label for="modelo">Modelo:<span class="required-field">*</span></label>
+                  <input type="text" name="modelo"  placeholder="Digite o modelo do seu veículo" id="modelo" minlength="1" maxlength="30" class="block" required> 
+                  </div>
+
+                  <div class="box-input">
+                  <label for="quilometragem">Quilometragem:<span class="required-field">*</span></label>
+                  <input type="number" name="quilometragem"  id="quilometragem" minlength="1" maxlength="30" class="block" required> 
+                  </div>
+
+                  <div class="box-input">
+                  <label for="data">Data da compra do veículo:<span class="required-field">*</span></label>
+                  <input type="date" name="data" id="data" class="block" required>
+                  </div> 
+
+                  <div class="box-input">
+                  <label for="cambio">Câmbio:<span class="required-field">*</span></label>
+                  <input type="radio" name="manual"  id="cambio"  required> Manual
+                  <input type="radio" name="automatico"  id=" cambio" required > Automático
+                   </div>
+                   <div class="option-box">
+                      <p>Opcionais:</p>
+                        <ul class="option-list">
+                            <li> <input type="checkbox" name="optional[]" id="vidro-eletrico" value="vidro-eletrico"></li>
+                             <label for="vidro-eletrico"> Vidro elétrico</label>
+                            <li> <input type="checkbox" name=" optional[]" id="som" value="som"></li>
+                             <label for="som"> Som</label>
+                            <li> <input type="checkbox" name="optional[]" id="camera-de-re" value="camera-de-re"></li>
+                             <label for="camera-de-re"> Câmera de ré</label>
+                            <li> <input type="checkbox" name="optional[]" id="banco-de-couro" value="banco-de-couro"></li>
+                             <label for="banco-de-couro"> Banco de couro</label>
+                        </ul>
+                   </div>
+
+                   <div class="option-box">
+                    
+                      <ul class="option-list">
+                          <li> <input type="checkbox" name="optional[]" id="airbag" value="airbag"></li>
+                           <label for="airbag"> Airbag</label>
+                          <li> <input type="checkbox" name=" optional[]" id="alarme" value="alarme"></li>
+                           <label for="alarme"> Alarme</label>
+                          <li> <input type="checkbox" name="optional[]" id="ar-condicionado" value="ar-condicionado"></li>
+                           <label for="ar-condicionado"> Ar condicionado</label>
+                          <li> <input type="checkbox" name="optional[]" id="trava-eletrica" value="trava-eletrica"></li>
+                           <label for="trava-eletrica"> Trava elétrica</label>
+                      </ul>
+                 </div>
+                  <div class="box-input">
+                    <p>Adicione uma foto do veículo: <span class="required-field">*</span></p>
+                    <input type="file" multiple accept="image/png , image/jpng" name="imagem" id="imagem" required>
+                  </div>
+
+                    <input type="submit" value="cadstrar" class="btn-submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
