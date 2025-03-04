@@ -50,7 +50,7 @@ input[type=text] , input[type=file], input[type=date], input[type=number]  {
     padding-left: 100px;
 }
 
-.div-titulo{
+.div-title{
     
     height: 150px;
     background-color: rgb(68, 147, 68);
@@ -58,7 +58,7 @@ input[type=text] , input[type=file], input[type=date], input[type=number]  {
 }
 
 
-.div-titulo h3{
+.div-title h3{
    
     color: rgb(246, 247, 246);
     margin-top: 0;
